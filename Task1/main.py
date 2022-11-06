@@ -65,6 +65,7 @@ def get_score(game_stamps, offset):
     else:
         return get_score(game_stamps[mid:], offset)
 
+
 if __name__ == "__main__":
     game_stamps = generate_game()
     print(get_score(game_stamps, game_stamps[-1]['offset']))
